@@ -16,7 +16,7 @@ function clean(done) {
 }
 
 function copy() {
-    return gulp.src('assets').pipe(gulp.dest('public/assets'));
+    return gulp.src('assets', { allowEmpty: true }).pipe(gulp.dest('public/assets'));
 }
 
 function pages() {
